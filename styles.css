@@ -1,0 +1,327 @@
+/* --- Estética Ciberpunk Industrial / Modo Oscuro Premium --- */
+:root {
+    --bg-dark-base: #0a0f1d;
+    --bg-card-glass: rgba(18, 24, 46, 0.6);
+    --neon-cyan: #00f2fe;
+    --neon-blue: #0072ff;
+    --text-pure: #ffffff;
+    --text-ghost: #7889a7;
+    --border-color: rgba(0, 242, 254, 0.15);
+    --font-header: 'Space Grotesk', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-dark-base);
+    color: var(--text-pure);
+    font-family: var(--font-mono);
+    font-size: 14px;
+}
+
+/* Fondo de Cuadrícula Dinámica */
+.tech-bg {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: -1;
+    background: 
+        linear-gradient(rgba(0, 242, 254, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 242, 254, 0.02) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* --- Navegación Avanzada Glassmorphism --- */
+.cyber-nav {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 75px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-blur {
+    position: absolute; width: 100%; height: 100%;
+    background: rgba(10, 15, 29, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: -1;
+}
+
+.nav-content {
+    width: 90%; max-width: 1300px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.cyber-logo {
+    font-family: var(--font-header);
+    font-weight: 700; font-size: 1.3rem;
+    color: var(--neon-cyan); text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    text-decoration: none; color: var(--text-ghost);
+    margin-left: 2rem; font-weight: 600;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px var(--neon-cyan);
+}
+
+/* Selector de Idioma Estilo Terminal */
+.lang-selector-container {
+    margin-left: 2rem;
+}
+
+.cyber-select {
+    background: rgba(10, 15, 29, 0.8);
+    color: var(--neon-cyan);
+    border: 1px solid var(--border-color);
+    padding: 0.4rem 0.8rem;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.1);
+}
+
+.cyber-select:hover, .cyber-select:focus {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+}
+
+.cyber-select option {
+    background: var(--bg-dark-base);
+    color: var(--text-pure);
+}
+
+/* --- Hero Section Imponente --- */
+.cyber-hero {
+    height: 100vh;
+    display: flex; align-items: center;
+    padding-left: 8%;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.terminal-badge {
+    font-size: 0.8rem; color: var(--neon-cyan);
+    border: 1px solid var(--neon-cyan);
+    padding: 0.3rem 0.8rem; width: fit-content;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+}
+
+.hero-name, .hero-lastname {
+    font-family: var(--font-header);
+    font-size: 5.5rem; font-weight: 700;
+    line-height: 0.9; letter-spacing: -2px;
+}
+
+.hero-name { color: var(--text-pure); }
+.hero-lastname {
+    background: linear-gradient(90deg, var(--neon-cyan), var(--neon-blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.console-typing {
+    font-size: 1.5rem; color: var(--text-pure);
+    margin-bottom: 2rem;
+}
+
+.prompt-symbol { color: var(--neon-cyan); }
+.cursor { animation: blink 0.8s infinite; color: var(--neon-cyan); }
+
+.hero-contact-strip {
+    color: var(--text-ghost); font-size: 0.9rem;
+    margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem;
+}
+
+.separator { color: var(--border-color); }
+
+/* --- Botones Especiales --- */
+.cyber-btn {
+    position: relative; display: inline-flex;
+    padding: 1rem 2rem; font-family: var(--font-header);
+    font-weight: 700; text-decoration: none;
+    letter-spacing: 1px; border-radius: 4px;
+    transition: all 0.3s; overflow: hidden;
+}
+
+.btn-neon {
+    background: var(--neon-cyan); color: var(--bg-dark-base);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+}
+
+.btn-neon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 35px rgba(0, 242, 254, 0.7);
+}
+
+.btn-outline {
+    border: 1px solid var(--border-color);
+    color: var(--text-pure); margin-left: 1.5rem;
+}
+
+.btn-outline:hover {
+    background: rgba(0, 242, 254, 0.05);
+    border-color: var(--neon-cyan);
+}
+
+.long-btn { width: 100%; justify-content: center; margin-top: 2rem; }
+
+/* --- Layout del Dashboard (Contenedor Principal) --- */
+.dashboard-container {
+    width: 90%; max-width: 1300px; margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.dash-section { margin-bottom: 6rem; }
+.dash-title {
+    font-family: var(--font-header); font-size: 1.8rem;
+    color: var(--text-pure); margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* Ventanas de Consola Estilo Linux/Mac */
+.window-header {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid var(--border-color); border-bottom: none;
+    padding: 0.6rem 1.5rem; border-radius: 8px 8px 0 0;
+    display: flex; align-items: center; gap: 1rem;
+}
+
+.window-dots { display: flex; gap: 6px; }
+.window-dots span { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.dot-r { background: #ef4444; } .dot-y { background: #eab308; } .dot-g { background: #22c55e; }
+.window-title { font-size: 0.8rem; color: var(--text-ghost); }
+
+.window-body {
+    background: var(--bg-card-glass);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem; border-radius: 0 0 8px 8px;
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+
+.profile-content p { font-size: 1.15rem; line-height: 1.9; color: #cbd5e1; }
+
+/* --- Grid Asimétrico de Habilidades --- */
+.skills-matrix {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* Efecto de Iluminación Perimetral por Mouse */
+.glass-card {
+    position: relative; background: var(--bg-card-glass);
+    border: 1px solid var(--border-color); border-radius: 8px;
+    padding: 2.5rem 2rem; overflow: hidden;
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+
+/* Generador de gradiente interactivo en JS */
+.glass-card::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(800px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(0, 242, 254, 0.08), transparent 40%);
+    z-index: 1; pointer-events: none;
+}
+
+.card-tag {
+    font-size: 0.75rem; color: var(--neon-blue); font-weight: 600; margin-bottom: 1rem;
+}
+.card-tag.special { color: #d8b4fe; }
+
+.glass-card h3 { font-family: var(--font-header); font-size: 1.4rem; margin-bottom: 1.5rem; }
+.glass-card ul { list-style: none; }
+.glass-card li { margin-bottom: 0.9rem; color: #94a3b8; line-height: 1.5; position: relative; padding-left: 1.2rem;}
+.glass-card li::before { content: '▪'; position: absolute; left: 0; color: var(--neon-cyan); }
+
+.progress-sub { font-size: 0.8rem; color: #c084fc; margin-top: -1rem; margin-bottom: 1.5rem; }
+
+/* --- Línea de Tiempo de Vanguardia (Historial) --- */
+.cyber-timeline { position: relative; padding-left: 3rem; }
+.cyber-timeline::before {
+    content: ''; position: absolute; top: 0; left: 15px; width: 1px; height: 100%;
+    background: linear-gradient(to bottom, var(--neon-cyan), transparent);
+}
+
+.timeline-block { display: flex; position: relative; margin-bottom: 4rem; gap: 3rem;}
+
+.timeline-meta { min-width: 150px; display: flex; flex-direction: column; }
+.time-tag { font-family: var(--font-header); font-size: 1.5rem; font-weight: 700; color: var(--neon-cyan); }
+.company-tag { font-size: 0.75rem; color: var(--text-ghost); margin-top: 0.2rem; }
+
+.timeline-card {
+    background: var(--bg-card-glass); border: 1px solid var(--border-color);
+    padding: 2rem; border-radius: 8px; width: 100%;
+    transition: border-color 0.4s;
+}
+
+.timeline-card:hover { border-color: var(--neon-cyan); }
+.timeline-card h3 { font-family: var(--font-header); font-size: 1.25rem; }
+.p-subtitle { font-size: 0.85rem; color: var(--text-ghost); margin: 0.3rem 0 1.5rem 0; }
+.timeline-card ul { list-style: none; }
+.timeline-card li { margin-bottom: 0.8rem; color: #cbd5e1; line-height: 1.6; }
+
+.neon-text { color: var(--neon-cyan); font-weight: 600; }
+
+/* --- Sección Educación --- */
+.edu-dashboard { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+.edu-panel { background: var(--bg-card-glass); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: 8px; }
+.edu-panel h3 { font-family: var(--font-header); font-size: 1.3rem; margin-bottom: 2rem; border-bottom: 1px solid rgba(0,242,254,0.1); padding-bottom: 0.5rem;}
+
+.edu-node { margin-bottom: 1.5rem; display: flex; gap: 1.5rem; }
+.node-year { color: var(--neon-blue); font-weight: 700; font-size: 1.1rem; }
+
+.terminal-list li { list-style: none; margin-bottom: 1.2rem; color: #cbd5e1; }
+.languages-box { margin-top: 2.5rem; background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 4px; border-left: 2px solid var(--neon-cyan); }
+.languages-box h4 { font-size: 0.85rem; color: var(--text-ghost); margin-bottom: 0.3rem; }
+
+/* --- Bloque Maestro GitHub (Diseño Industrial Estelar) --- */
+.github-mega-box {
+    background: linear-gradient(135deg, rgba(10,15,29,0.9) 0%, rgba(0,114,255,0.05) 100%);
+    border: 2px solid var(--neon-cyan); border-radius: 12px;
+    padding: 4rem; text-align: center; position: relative; overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 242, 254, 0.1);
+}
+
+.github-mega-box h2 { font-family: var(--font-header); font-size: 2.2rem; margin-bottom: 1.5rem; }
+.github-mega-box p { max-width: 700px; margin: 0 auto 2.5rem auto; color: var(--text-ghost); line-height: 1.8; font-size: 1.1rem; }
+
+.live-repos-preview { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
+.mini-repo { background: rgba(0, 242, 254, 0.05); border: 1px dashed var(--neon-cyan); padding: 0.8rem 1.5rem; border-radius: 4px; color: var(--neon-cyan); font-size: 0.9rem; }
+
+/* --- Footer --- */
+.cyber-footer { text-align: center; padding: 4rem 0; font-size: 0.8rem; color: var(--text-ghost); border-top: 1px solid var(--border-color); }
+
+/* --- Animaciones e Intersección --- */
+@keyframes blink { 50% { opacity: 0; } }
+
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s, transform 0.8s; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* --- Responsivo Integrado --- */
+@media (max-width: 900px) {
+    .nav-content { display: flex; justify-content: space-between; width: 92%; }
+    .nav-links { display: none; }
+    .lang-selector-container { margin-left: 0; }
+    .cyber-hero { padding-left: 5%; }
+    .hero-name, .hero-lastname { font-size: 3.5rem; }
+    .timeline-block { flex-direction: column; gap: 0.5rem; }
+    .edu-dashboard { grid-template-columns: 1fr; }
+    .github-mega-box { padding: 2rem; }
+}

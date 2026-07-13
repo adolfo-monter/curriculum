@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adolfo Monter Osorio | Terminal CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Fondo de Red Tecnológica Animada en CSS puro -->
+    <div class="tech-bg"></div>
+
+    <!-- Navegación Flotante Futurista -->
+    <nav class="cyber-nav">
+        <div class="nav-blur"></div>
+        <div class="nav-content">
+            <a href="#" class="cyber-logo">&lt;AMO // SYSTEM&gt;</a>
+            <div class="nav-links">
+                <a href="#perfil" data-i18n="nav_profile">/Perfil</a>
+                <a href="#habilidades" data-i18n="nav_skills">/Habilidades</a>
+                <a href="#experiencia" data-i18n="nav_experience">/Historial</a>
+                <a href="#educacion" data-i18n="nav_education">/Formación</a>
+                <a href="#portafolio" data-i18n="nav_portfolio">/Portafolio</a>
+            </div>
+            <!-- Selector de Idioma Ciberpunk -->
+            <div class="lang-selector-container">
+                <select id="lang-select" class="cyber-select">
+                    <option value="es">ESP</option>
+                    <option value="en">ENG</option>
+                    <option value="fr">FRA</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section de Alto Impacto -->
+    <header class="cyber-hero">
+        <div class="hero-wrapper">
+            <div class="terminal-badge" data-i18n="hero_status">SYS.STATUS: ACTIVE // AUTODIDACTA</div>
+            <h1 class="hero-name">ADOLFO MONTER</h1>
+            <h1 class="hero-lastname">OSORIO</h1>
+            
+            <div class="console-typing">
+                <span class="prompt-symbol">&gt;_</span>
+                <span class="typing-text"></span><span class="cursor">|</span>
+            </div>
+
+            <div class="hero-contact-strip">
+                <span>📍 CDMX</span>
+                <span class="separator">|</span>
+                <span>📞 +52 55 3270 0861</span>
+                <span class="separator">|</span>
+                <span>📞 +52 55 4729 3856</span>
+                <span class="separator">|</span>
+                <span>✉️ adolfo.monter.osorio@outlook.com</span>
+            </div>
+
+            <div class="action-buttons">
+                <a href="https://linkedin.com/in/adolfomonter-o" target="_blank" class="cyber-btn btn-neon">
+                    <span class="btn-text" data-i18n="btn_linkedin">CONECTAR EN LINKEDIN</span>
+                    <span class="btn-glitch"></span>
+                </a>
+                <a href="#portafolio" class="cyber-btn btn-outline" data-i18n="btn_repos">EXPLORAR REPOS</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal estilo Dashboard -->
+    <main class="dashboard-container">
+
+        <!-- Sección Perfil -->
+        <section id="perfil" class="dash-section reveal">
+            <div class="window-header">
+                <div class="window-dots"><span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span></div>
+                <span class="window-title">core_profile.sys</span>
+            </div>
+            <div class="window-body profile-content">
+                <p data-i18n="profile_desc">Ingeniero en Sistemas de Software con sólida trayectoria en soporte técnico, atención a usuarios, administración de infraestructura y desarrollo web básico. Actualmente en transición al análisis de datos, con conocimientos aplicados en Excel, Power BI, SQL y Python. Capacidad para resolver problemas técnicos de forma ágil, capacitar usuarios, documentar procesos y optimizar la eficiencia operativa en entornos de TI.</p>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="habilidades" class="dash-section reveal">
+            <h2 class="dash-title" data-i18n="skills_title">// MATRIZ_DE_HABILIDADES</h2>
+            <div class="skills-matrix">
+                
+                <div class="glass-card active-border" data-glow>
+                    <div class="card-tag" data-i18n="skills_tag1">INFRAESTRUCTURA</div>
+                    <h3 data-i18n="skills_cat1">Soporte e IT</h3>
+                    <ul>
+                        <li data-i18n="skills_cat1_1">Mantenimiento correctivo/preventivo HW/SW</li>
+                        <li data-i18n="skills_cat1_2">Soporte Windows, macOS, Linux básico</li>
+                        <li data-i18n="skills_cat1_3">Gestión de Tickets (ServiceNow)</li>
+                        <li data-i18n="skills_cat1_4">Clonación de discos y migración de entornos</li>
+                        <li data-i18n="skills_cat1_5">Infraestructura de red y peinado de racks</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card active-border" data-glow>
+                    <div class="card-tag" data-i18n="skills_tag2">DATA_ANALYTICS</div>
+                    <h3 data-i18n="skills_cat2">Datos y Business Intelligence</h3>
+                    <ul>
+                        <li data-i18n="skills_cat2_1">Excel Intermedio / Power BI</li>
+                        <li data-i18n="skills_cat2_2">Estructuración de Consultas SQL</li>
+                        <li data-i18n="skills_cat2_3">Lógica de Scripting en Python</li>
+                        <li data-i18n="skills_cat2_4">PostgreSQL, MySQL, SQLite</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card active-border transition-card" data-glow>
+                    <div class="card-tag special" data-i18n="skills_tag3">LEARNING_ROADMAP</div>
+                    <h3 data-i18n="skills_cat3">Desarrollo Web</h3>
+                    <div class="progress-sub" data-i18n="skills_sub3">Capacitándome de forma autodidacta</div>
+                    <ul>
+                        <li data-i18n="skills_cat3_1">HTML5 / CSS3 Avanzado</li>
+                        <li data-i18n="skills_cat3_2">Lógica de JavaScript Vanilla</li>
+                        <li data-i18n="skills_cat3_3">Maquetación Responsiva con Bootstrap</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección Historial / Experiencia -->
+        <section id="experiencia" class="dash-section reveal">
+            <h2 class="dash-title" data-i18n="exp_title">// REGISTRO_DE_MISIONES (EXPERIENCIA)</h2>
+            <div class="cyber-timeline">
+                
+                <!-- Empleo 1 -->
+                <div class="timeline-block">
+                    <div class="timeline-meta">
+                        <span class="time-tag">2024</span>
+                        <span class="company-tag">UNITEC ERMITA</span>
+                    </div>
+                    <div class="timeline-card" data-glow>
+                        <h3 data-i18n="exp1_role">Analista de Servicios y Tecnologías de Información</h3>
+                        <p class="p-subtitle" data-i18n="exp1_date">Julio 2024 - Agosto 2024</p>
+                        <ul>
+                            <li data-i18n="exp1_i1">Gestioné la <span class="neon-text">infraestructura tecnológica</span> del campus, asegurando la continuidad y disponibilidad de los servicios clave.</li>
+                            <li data-i18n="exp1_i2">Administré y resolví incidencias a través de <span class="neon-text">ServiceNow</span>, enfocándome en la optimización de los tiempos de respuesta.</li>
+                            <li data-i18n="exp1_i3">Restauré accesos y permisos en el <span class="neon-text">ERP Banner</span>, solucionando conflictos críticos de compatibilidad con Java y vencimiento de certificados digitales.</li>
+                            <li data-i18n="exp1_i4">Coordiné la entrega, recepción y control de trazabilidad de equipos de cómputo mediante el uso de responsivas.</li>
+                            <li data-i18n="exp1_i5">Capacité a usuarios finales en el uso correcto de sistemas operativos y herramientas de oficina, garantizando un alto nivel de satisfacción.</li>
+                            <li data-i18n="exp1_i6">Supervisé inventarios y resguardo de respaldos de dispositivos para asegurar la <span class="neon-text">integuridad de la información</span>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Empleo 2 -->
+                <div class="timeline-block">
+                    <div class="timeline-meta">
+                        <span class="time-tag">2023</span>
+                        <span class="company-tag">UNITEC (SERVICIO SOCIAL)</span>
+                    </div>
+                    <div class="timeline-card" data-glow>
+                        <h3 data-i18n="exp2_role">Soporte de Infraestructura y Atención a Usuarios</h3>
+                        <p class="p-subtitle" data-i18n="exp2_date">Junio 2023 - Diciembre 2023</p>
+                        <ul>
+                            <li data-i18n="exp2_i1">Ejecuté la <span class="neon-text">migración masiva de sistemas operativos</span> de Windows 10 a Windows 11, mejorando la estabilidad del parque tecnológico.</li>
+                            <li data-i18n="exp2_i2">Agilicé los procesos de despliegue informático y reinstalación de software mediante técnicas avanzadas de <span class="neon-text">clonación de discos</span>.</li>
+                            <li data-i18n="exp2_i3">Atendí solicitudes de soporte técnico general, priorizando la resolución efectiva desde el primer contacto con el usuario.</li>
+                            <li data-i18n="exp2_i4">Colaboré en tareas de conectividad física y redes, incluyendo peinado de racks, ponchado de cableado RJ45 y pruebas de enlace.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Empleo 3 -->
+                <div class="timeline-block">
+                    <div class="timeline-meta">
+                        <span class="time-tag">2012 - 2022</span>
+                        <span class="company-tag">TERATEK-APP</span>
+                    </div>
+                    <div class="timeline-card" data-glow>
+                        <h3 data-i18n="exp3_role">Soporte Técnico / Desarrollo Web</h3>
+                        <p class="p-subtitle" data-i18n="exp3_date">Mayo 2012 - Diciembre 2022</p>
+                        <ul>
+                            <li data-i18n="exp3_i1">Diseñé y mantuve sitios web responsivos utilizando estándares de <span class="neon-text">HTML, CSS y Bootstrap</span>.</li>
+                            <li data-i18n="exp3_i2">Implementé sistemas de punto de venta integrados con bases de datos <span class="neon-text">PostgreSQL</span>, capacitando a usuarios finales para optimizar su eficiencia operativa.</li>
+                            <li data-i18n="exp3_i3">Instalá, configuré y actualicé componentes de hardware y software de acuerdo con los requerimientos específicos de los clientes.</li>
+                            <li data-i18n="exp3_i4">Aseguré la continuidad del negocio mediante la ejecución de <span class="neon-text">respaldos preventivos</span> antes de realizar mantenimientos críticos o reinstalaciones.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Formación y Educación -->
+        <section id="educacion" class="dash-section reveal">
+            <h2 class="dash-title" data-i18n="edu_title">// EXPEDIENTE_ACADEMICO</h2>
+            <div class="edu-dashboard">
+                <div class="edu-panel" data-glow>
+                    <h3 data-i18n="edu_h1">Formación Profesional</h3>
+                    <div class="edu-node">
+                        <span class="node-year">2023</span>
+                        <p><strong data-i18n="edu_m1">Maestría en Analítica e Inteligencia de Negocios (Seminario)</strong><br>UNITEC</p>
+                    </div>
+                    <div class="edu-node">
+                        <span class="node-year">2022</span>
+                        <p><strong data-i18n="edu_m2">Ingeniería en Sistemas de Software</strong><br>UNITEC | Cédula: 14030481</p>
+                    </div>
+                    <div class="edu-node">
+                        <span class="node-year">2002</span>
+                        <p><strong data-i18n="edu_m3">Profesional Técnico en Informática</strong><br>CONALEP TLALPAN 1 | Cédula: 4647481</p>
+                    </div>
+                </div>
+
+                <div class="edu-panel" data-glow>
+                    <h3 data-i18n="edu_h2">Especialización y Cursos</h3>
+                    <ul class="terminal-list">
+                        <li data-i18n="edu_c1">⚡ Cursos de Lógica, Excel y Lenguaje C - IPN (UPIICSA)</li>
+                        <li data-i18n="edu_c2">⚡ Diplomado Soporte Técnico Avanzado - Centro Inv. Cibernética</li>
+                        <li data-i18n="edu_c3">⚡ Diplomado en Diseño Web (90 horas) - Edumac</li>
+                        <li data-i18n="edu_c4">⚡ Análisis, Visualización de Datos (Power BI) y Python - UNITEC</li>
+                    </ul>
+                    <div class="languages-box">
+                        <h4 data-i18n="edu_lang_title">Idiomas detectados:</h4>
+                        <p data-i18n="edu_lang_content">ESPAÑOL (Nativo) | INGLÉS (Básico) | FRANCÉS (Básico) | ALEMÁN (Básico)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Portafolio Enlace GitHub Destacado -->
+        <section id="portafolio" class="dash-section reveal">
+            <div class="github-mega-box">
+                <div class="mega-grid-lines"></div>
+                <h2 data-i18n="port_title">DEMOSTRACIÓN DE AUTODIDACTISMO</h2>
+                <p data-i18n="port_desc">Evidencia de mi evolución técnica y constancia. Mantengo repositorios independientes y estructurados por tecnología donde documento mis prácticas, consultas avanzadas y scripts lógicos en entornos reales.</p>
+                
+                <div class="live-repos-preview" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; max-width: 800px; margin: 0 auto 3rem auto;">
+                    
+                    <a href="https://github.com/adolfo-monter/practicas-python" target="_blank" class="mini-repo" style="text-align: left; min-width: 230px; text-decoration: none; display: block; transition: border-color 0.3s;">
+                        <span style="color: #cbd5e1; font-weight: bold;">📁 /practicas-python</span><br>
+                        <span style="font-size: 0.8rem; color: #7889a7;" data-i18n="port_repo1">Scripts y estructuras (.py)</span>
+                    </a>
+
+                    <a href="https://github.com/adolfo-monter/practicas-sql" target="_blank" class="mini-repo" style="text-align: left; min-width: 230px; text-decoration: none; display: block; transition: border-color 0.3s;">
+                        <span style="color: #cbd5e1; font-weight: bold;">📁 /practicas-sql</span><br>
+                        <span style="font-size: 0.8rem; color: #7889a7;" data-i18n="port_repo2">Modelos de bases de datos (.sql)</span>
+                    </a>
+
+                    <div class="mini-repo" style="text-align: left; min-width: 230px; opacity: 0.6;">
+                        <span style="color: #cbd5e1; font-weight: bold;">📁 /practicas-powerbi</span><br>
+                        <span style="font-size: 0.8rem; color: #eab308;" data-i18n="port_repo3">[ En carga / Próximamente ]</span>
+                    </div>
+
+                </div>
+
+                <a href="https://github.com/adolfo-monter?tab=repositories" target="_blank" class="cyber-btn btn-neon long-btn">
+                    <span class="btn-text" data-i18n="port_btn">EJECUTAR CONEXIÓN: EXPLORAR TODO TU PERFIL</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="cyber-footer">
+        <p data-i18n="footer_text">AMO.SYSTEM_CORE // VER_2026_V2 // DESARROLLADO CON INGENIERÍA RIGUROSA</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
